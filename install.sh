@@ -27,8 +27,9 @@ then
     echo "-nn: \tOnly installs ezrknn-toolkit2"
     echo "-h: \tShows this help screen"
     echo
-    echo "For more information visit https://github.com/Pelochus/ezrknpu"
-    echo
+    echo "For more information visit https://github.com/hajajmaor/ezrknpu"
+    echogit submodule init
+
     exit
 fi
 
@@ -42,7 +43,7 @@ message_print "Cloning main repo with submodules..."
 
 # This also clones submodules
 # Add --remote-submodules if you want to update submodules to latest commit and not current repo commit
-git clone --recurse-submodules -j2 https://github.com/Pelochus/ezrknpu
+git clone --recurse-submodules -j2 https://github.com/hajajmaor/ezrknpu
 cd ezrknpu
 
 message_print "Updating submodules..."
